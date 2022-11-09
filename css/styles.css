@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../background.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+}
+
+#board {
+    background-color: rgb(255, 241, 200);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);    width: 80vmin;
+    height: 72vmin;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+}
+
+.head {
+    background-color: black;
+    border-radius: 20px;
+    
+}
+.snake {
+    background-color: blue;
+    border-radius: 20px;
+
+}
+.food {
+    background-color: red;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+
+}
+
+#scoreBox{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: absolute;
+    top: 9px;
+    right: 190px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#highScoreBox{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: absolute;
+    top: 89px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
